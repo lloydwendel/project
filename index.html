@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Desire's Furniture | Home</title>
+
+<style>
+/* =========================
+   GLOBAL
+========================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+    background: #0f172a;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+    min-height: 80vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("images/tri.png") center / cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   FEATURES
+========================= */
+.features {
+    padding: 60px 0;
+    background: #f8fafc;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   STATS
+========================= */
+.stats {
+    padding: 70px 0;
+    background: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-box {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.stat-box h3 {
+    font-size: 36px;
+    color: #2563eb;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+.testimonials {
+    padding: 80px 0;
+    background: #f1f5f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.testimonial {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* =========================
+   BRANDS
+========================= */
+.brands {
+    padding: 60px 0;
+    background: white;
+    text-align: center;
+}
+
+.brand-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.brand-logos img {
+    max-width: 140px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.brand-logos img:hover {
+    opacity: 1;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+.final-cta {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <img src="images/DS.JPG" alt="Logo">
+            <span>DESIRE'S FURNITURE</span>
+        </div>
+        <nav>
+            <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Modern Furniture for Your Home</h1>
+        <p>Comfort, quality, and timeless design.</p>
+        <a href="products.html" class="btn">Explore Products</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Premium Quality</h3>
+                <p>Durable and elegant furniture.</p>
+            </div>
+            <div class="feature">
+                <h3>Affordable Prices</h3>
+                <p>Best value for your money.</p>
+            </div>
+            <div class="feature">
+                <h3>Trusted Service</h3>
+                <p>Customer satisfaction guaranteed.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container stats-grid">
+        <div class="stat-box"><h3>10+</h3><p>Years Experience</p></div>
+        <div class="stat-box"><h3>5,000+</h3><p>Happy Clients</p></div>
+        <div class="stat-box"><h3>1,200+</h3><p>Designs</p></div>
+        <div class="stat-box"><h3>100%</h3><p>Quality</p></div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <div class="container">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Very high quality furniture. Worth it!"</p>
+                <strong>Maria S.</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Modern designs and friendly service."</p>
+                <strong>John D.</strong>
+            </div>
+            <div class="testimonial">
+                <p>"Our home looks premium now."</p>
+                <strong>Angela R.</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brands">
+    <div class="container">
+        <h2>Trusted By</h2>
+        <div class="brand-logos">
+            <img src="images/brand1.png">
+            <img src="images/brand2.png">
+            <img src="images/brand3.png">
+            <img src="images/brand4.png">
+        </div>
+    </div>
+</section>
+
+<section class="final-cta">
+    <h2>Upgrade Your Home Today</h2>
+    <p>Discover furniture that fits your lifestyle.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+</section>
+
+<footer class="footer">
+    <p>© 2026 Desire's Furniture. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
