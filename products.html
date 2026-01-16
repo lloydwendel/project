@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products - Desire's Furniture</title>
+    <style></style>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">
+          <img src="images/DS.JPG" alt="Company Logo" />
+          <span>Desire's Furniture</span>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="cart-container">
+          <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+          <div id="cart-dropdown" class="cart-dropdown">
+            <h4>Your Cart</h4>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart">Clear Cart</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Our Furniture</h1>
+        <p>Style • Comfort • Quality</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-grid">
+          <!-- Double Deck -->
+          <div class="feature">
+            <img
+              src="images/double_deck.jpg"
+              alt="Double Deck"
+              class="product-img"
+            />
+            <h3 class="product-title">Double Deck</h3>
+            <div class="product-details">
+              <p>Comfortable and modern deck for everyday use.</p>
+              <p><strong>Stock:</strong> 10 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Single" data-price="5000">Single- ₱5,000</option>
+                <option value="Double" data-price="7500">
+                  Double - ₱7,500
+                </option>
+                <option value="Queen" data-price="10000">
+                  Queen - ₱10,000
+                </option>
+                <option value="King" data-price="12000">King - ₱12,000</option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Triple Deck -->
+          <div class="feature">
+            <img
+              src="images/triple_deck.jpg"
+              alt="Triple Deck"
+              class="product-img"
+            />
+            <h3 class="product-title">Triple Deck</h3>
+            <div class="product-details">
+              <p>Extra spacious, perfect for families or shared rooms.</p>
+              <p><strong>Stock:</strong> 5 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Single" data-price="7000">
+                  Single - ₱7,000
+                </option>
+                <option value="Double" data-price="9500">
+                  Double - ₱9,500
+                </option>
+                <option value="Queen" data-price="12500">
+                  Queen - ₱12,500
+                </option>
+                <option value="King" data-price="15000">King - ₱15,000</option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Loft Bed -->
+          <div class="feature">
+            <img src="images/loft_bed.jpg" alt="Loft Bed" class="product-img" />
+            <h3 class="product-title">Loft Bed</h3>
+            <div class="product-details">
+              <p>Smart elevated bed with space-saving design underneath.</p>
+              <p><strong>Stock:</strong> 7 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Single" data-price="6000">
+                  Single - ₱6,000
+                </option>
+                <option value="Double" data-price="8500">
+                  Double - ₱8,500
+                </option>
+                <option value="Queen" data-price="11000">
+                  Queen - ₱11,000
+                </option>
+                <option value="King" data-price="13000">King - ₱13,000</option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Sofa Bed -->
+          <div class="feature">
+            <img src="images/sofa_bed.jpg" alt="Sofa Bed" class="product-img" />
+            <h3 class="product-title">Sofa Bed</h3>
+            <div class="product-details">
+              <p>Stylish and functional, doubles as a sofa and bed.</p>
+              <p><strong>Stock:</strong> 12 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Single" data-price="4500">
+                  Single - ₱4,500
+                </option>
+                <option value="Double" data-price="6500">
+                  Double - ₱6,500
+                </option>
+                <option value="Queen" data-price="9000">Queen - ₱9,000</option>
+                <option value="King" data-price="11000">King - ₱11,000</option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Bed -->
+          <div class="feature">
+            <img src="images/bed.jpg" alt="Bed" class="product-img" />
+            <h3 class="product-title">Bed</h3>
+            <div class="product-details">
+              <p>Durable and elegant bed for restful nights.</p>
+              <p><strong>Stock:</strong> 15 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Single" data-price="4000">
+                  Single - ₱4,000
+                </option>
+                <option value="Double" data-price="6000">
+                  Double - ₱6,000
+                </option>
+                <option value="Queen" data-price="8500">Queen - ₱8,500</option>
+                <option value="King" data-price="10000">King - ₱10,000</option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Office Table -->
+          <div class="feature">
+            <img
+              src="images/office_table.jpg"
+              alt="Office Table"
+              class="product-img"
+            />
+            <h3 class="product-title">Office Table</h3>
+            <div class="product-details">
+              <p>Sturdy office table for home or work space.</p>
+              <p><strong>Stock:</strong> 8 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Small" data-price="3000">Small - ₱3,000</option>
+                <option value="Medium" data-price="4500">
+                  Medium - ₱4,500
+                </option>
+                <option value="Large" data-price="6000">Large - ₱6,000</option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Padded Sofa -->
+          <div class="feature">
+            <img
+              src="images/padded_sofa.jpg"
+              alt="Padded Sofa"
+              class="product-img"
+            />
+            <h3 class="product-title">Padded Sofa</h3>
+            <div class="product-details">
+              <p>Comfortable sofa with soft padding for living room.</p>
+              <p><strong>Stock:</strong> 6 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="2-seater" data-price="5000">
+                  2-seater - ₱5,000
+                </option>
+                <option value="3-seater" data-price="7500">
+                  3-seater - ₱7,500
+                </option>
+                <option value="L-shape" data-price="12000">
+                  L-shape - ₱12,000
+                </option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Chair -->
+          <div class="feature">
+            <img src="images/chair.jpg" alt="Chair" class="product-img" />
+            <h3 class="product-title">Chair</h3>
+            <div class="product-details">
+              <p>Elegant and ergonomic chair for home or office.</p>
+              <p><strong>Stock:</strong> 20 pcs</p>
+              <label>Size:</label>
+              <select class="size-select">
+                <option value="Standard" data-price="1500">
+                  Standard - ₱1,500
+                </option>
+                <option value="Premium" data-price="2500">
+                  Premium - ₱2,500
+                </option>
+              </select>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Desire's Furniture. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<script>
+  let cart = [];
+
+  // Toggle expand/collapse for product details
+  document.querySelectorAll(".feature").forEach((feature) => {
+    feature.addEventListener("click", (e) => {
+      if (
+        !e.target.classList.contains("btn") &&
+        !e.target.classList.contains("size-select")
+      ) {
+        feature.classList.toggle("expanded");
+      }
+    });
+  });
+
+  // Add to cart functionality
+  document.querySelectorAll(".btn").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const feature = e.target.closest(".feature");
+      const name = feature.querySelector("h3").textContent;
+      const sizeSelect = feature.querySelector(".size-select");
+      const selectedOption = sizeSelect ? sizeSelect.selectedOptions[0] : null;
+      const selectedSize = selectedOption ? selectedOption.value : "Default";
+      const price = selectedOption
+        ? parseFloat(selectedOption.getAttribute("data-price"))
+        : 0;
+      const existing = cart.find(
+        (item) => item.name === name && item.size === selectedSize
+      );
+      const formattedPrice = price.toLocaleString();
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ name, size: selectedSize, price: price, quantity: 1 });
+      }
+      updateCart();
+      alert(
+        `You added ${name} to the cart with the price of ₱${formattedPrice}.`
+      );
+    });
+  });
+
+  function updateCart() {
+    const cartCount = document.getElementById("cart-count");
+    const cartItems = document.getElementById("cart-items");
+    cartCount.textContent = cart.length;
+    cartItems.innerHTML = "";
+    cart.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = `${item.name} (${item.size}) - ₱${item.price} x ${item.quantity}`;
+      cartItems.appendChild(li);
+    });
+  }
+
+  document.getElementById("cart-btn").addEventListener("click", () => {
+    const dropdown = document.getElementById("cart-dropdown");
+    dropdown.style.display =
+      dropdown.style.display === "block" ? "none" : "block";
+  });
+
+  document.getElementById("clear-cart").addEventListener("click", () => {
+    cart = [];
+    updateCart();
+  });
+</script>
